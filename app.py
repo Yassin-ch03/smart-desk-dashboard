@@ -66,7 +66,7 @@ col4.metric("Mode", mode)
 st.divider()
 
 # ================= ETAT =================
-st.subheader("🚦 État du système")
+st.subheader("État du système")
 
 if temp > 27:
     st.error("Température trop élevée")
@@ -139,5 +139,6 @@ st.divider()
 # ================= CLEAR =================
 if st.button("Tout éteindre"):
     send("CLEAR")
+
 
 
