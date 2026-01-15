@@ -38,7 +38,7 @@ def send(cmd):
         st.error(f"Erreur réseau : {e}")
 
 st.set_page_config(page_title="Smart Desk Assistant", layout="wide")
-st.title("🧠 Smart Desk Assistant")
+st.title(" Smart Desk Assistant")
 
 # ================= LECTURE FIREBASE =================
 ref = db.reference("/last")
@@ -139,4 +139,5 @@ st.divider()
 # ================= CLEAR =================
 if st.button("Tout éteindre"):
     send("CLEAR")
+
 
