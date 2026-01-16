@@ -6,7 +6,7 @@ import requests
 # ================= FIREBASE =================
 FIREBASE_DB_URL = "https://projet-final-database-default-rtdb.europe-west1.firebasedatabase.app/"
 
-# ⚠️ ICI TU COLLES LE CONTENU DE firebase_key.json
+
 cred = credentials.Certificate({
     "type": "service_account",
     "project_id": "TON_PROJECT_ID",
@@ -80,7 +80,7 @@ st.divider()
 
 
 # ================= SERVO =================
-st.subheader("🪟 Fenêtre (Servo)")
+st.subheader(" Fenêtre (Servo)")
 colS1, colS2 = st.columns(2)
 
 if colS1.button("Ouvrir fenêtre"):
@@ -139,6 +139,7 @@ st.divider()
 # ================= CLEAR =================
 if st.button("Tout éteindre"):
     send("CLEAR")
+
 
 
 
